@@ -21,5 +21,5 @@ func main() {
 		os.Exit(1)
 	}
 
-	internal.RunPing(host, ip, 4) // 4 packets default
+	internal.RunPing(host, ip, 4)
 }
