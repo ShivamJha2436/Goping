@@ -38,8 +38,8 @@ It manually constructs ICMP Echo Request packets, sends them over a raw socket, 
 +---------------------------------------+
 | Identifier(2) | Sequence Number(2)    |
 +---------------------------------------+
-| Data (variable)                         |
-+-----------------------------------------+
+| Data (variable)                       |
++---------------------------------------+
 ```
 ### Internet checksum (RFC 1071)
 - 16-bit ones-complement sum of all 16-bit words in the header+data, with odd byte padded.
