@@ -31,7 +31,7 @@ It manually constructs ICMP Echo Request packets, sends them over a raw socket, 
 - For IPv4 ICMP we use: socket(AF_INET, SOCK_RAW, IPPROTO_ICMP).
 
 ### ICMP packet layout (Echo Request/Reply)
-`
+```sh
 0         1         2         3
 +---------+---------+---------+---------+
 | Type(1) | Code(1) | Checksum(2)       |
@@ -40,7 +40,7 @@ It manually constructs ICMP Echo Request packets, sends them over a raw socket, 
 +---------------------------------------+
 | Data (variable)                         |
 +-----------------------------------------+
-`
+```
 ### Internet checksum (RFC 1071)
 - 16-bit ones-complement sum of all 16-bit words in the header+data, with odd byte padded.
 - Final checksum = ones-complement of the folded sum.
